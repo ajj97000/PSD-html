@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="src/fonts/Century Gothic.ttf">
     <link rel="stylesheet" href="src/fonts/CenturyGothic.ttf">
     <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -43,6 +44,7 @@
                                 shopping_cart
                             </span>
                             <span>Cart</span>
+                            <span>(0)</span>
                         </button>
                     </div>
                 </div>
@@ -50,7 +52,50 @@
         </div>
     </header>
     <!-- header end  -->
-
+    <div class="container">
+        <header class="header-mobile">
+            <div class="d-flex">
+                <button class="button button--menu toggle-menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="mobile-menu">
+                    <div class="container">
+                        <button class="button button--menu toggle-menu">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div>
+                            <ul class="nav-mobile">
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">New</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">Top 50</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">Gifts</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">Personalised Gifts</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">Gift Registration</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="src/images/GR-text-logo.svg" alt="" class="header-mobile__logo">
+            </div>
+            <div class="d-flex">
+                <button class="button button--menu">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+                <button class="button button--menu">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </button>
+            </div>
+        </header>
+    </div>
     <main>
         <div class="container">
             <!-- nav start  -->
@@ -206,17 +251,17 @@
             <!-- new arrivals section  -->
             <section class="section">
                 <div class="row justify-content-end">
-                    <div class="col-4">
+                    <div class="col-md-4 col-6">
                         <h2 class="section__title">New Arrivals</h2>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4 col-6">
                         <div class="d-flex justify-content-end">
                             <a href="">View All</a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                         <div class="card">
                             <a href="" class="card__image-link">
                                 <h3 class="card__title">Aura Reading Cards</h3>
@@ -224,7 +269,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                         <div class="card">
                             <a href="" class="card__image-link">
                                 <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
@@ -232,7 +277,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                         <div class="card">
                             <a href="" class="card__image-link">
                                 <h3 class="card__title">Personalised Moon Phase</h3>
@@ -240,7 +285,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                         <div class="card">
                             <a href="" class="card__image-link">
                                 <h3 class="card__title">Alien Plant Markers</h3>
@@ -253,17 +298,17 @@
             <!-- top 50 section  -->
             <section class="section">
                 <div class="row justify-content-end">
-                    <div class="col-4">
+                    <div class="col-md-4 col-6">
                         <h2 class="section__title">Top 50</h2>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4 col-6">
                         <div class="d-flex justify-content-end">
                             <a href="">View All</a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                         <div class="card">
                             <a href="" class="card__image-link">
                                 <h3 class="card__title">Grow It Bonsai Tree</h3>
@@ -271,7 +316,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                         <div class="card">
                             <a href="" class="card__image-link">
                                 <h3 class="card__title">Palm Reading Cards</h3>
@@ -279,7 +324,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                         <div class="card">
                             <a href="" class="card__image-link">
                                 <h3 class="card__title">Unicorn Poo - Bath Bombs</h3>
@@ -287,7 +332,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                         <div class="card">
                             <a href="" class="card__image-link">
                                 <h3 class="card__title">Catastrophe</h3>
@@ -301,28 +346,28 @@
             <section class="section">
                 <h2 class="section__title">Popular Collections</h2>
                 <div class="row">
-                    <div class="col-6 mb-30">
+                    <div class="col-md-6 col-12 mb-30">
                         <div class="card card--lg">
                             <a href="" class="card__image-link">
                                 <img src="src/images/card-9.jpg" alt="" class="card__image">
                             </a>
                         </div>
                     </div>
-                    <div class="col-6 mb-30">
+                    <div class="col-md-6 col-12 mb-30">
                         <div class="card card--lg">
                             <a href="" class="card__image-link">
                                 <img src="src/images/card-10.jpg" alt="" class="card__image">
                             </a>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-12 mb-30">
                         <div class="card card--lg">
                             <a href="" class="card__image-link">
                                 <img src="src/images/card-11.jpg" alt="" class="card__image">
                             </a>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-12">
                         <div class="card card--lg">
                             <a href="" class="card__image-link">
                                 <img src="src/images/card-8.jpg" alt="" class="card__image">
@@ -417,7 +462,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3 col-12">
-                    <div class="text-center">
+                    <div class="text-center footer__end">
                         <a href="index.html">
                             <img src="src/images/footer-logo.jpg" title="gift republic logo" alt="gift republic logo"
                                 class="footer__logo">
@@ -434,6 +479,7 @@
         </div>
     </footer>
     <!-- footer end  -->
+    <script src="src/scripts/scripts.js"></script>
 </body>
 
 </html>
